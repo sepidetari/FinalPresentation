@@ -1,6 +1,5 @@
 Your presentation should show the goals that the group had, which steps have been made, which goals have been achieved (including evaluation results where possible) and which goals might not have been achieved (and why).
 
-
 Goals:
 
 1. Simple Workflow:
@@ -12,7 +11,7 @@ The application should be able to handle more complex workflows.
 
 
 3. Exception & Message handling 
-The application should log everything on a central location. 
+The application should log everything on a central location. We use ELK Stack for this purpose. Every microservice sends logs to a centralized location and logstash sends the logs to ElasticSearch. The logs can be visualizedin Kibana.
 
 4. Visualize database graphs in a graphical view
 The user should be able to display database content as graph and table in the UI.
