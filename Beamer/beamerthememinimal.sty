@@ -1,0 +1,34 @@
+%This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was not distributed with this file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+\newif\ifhandout
+\handoutfalse
+\DeclareOptionBeamer{handout}{\handouttrue}
+\ProcessOptionsBeamer
+
+\mode<presentation>
+
+\ifhandout
+\gdef\beamer@currentmode{handout}
+\fi
+
+\RequirePackage{tikz}
+
+\definecolor{upbblue}{RGB}{0,32,91}
+\definecolor{upbgreen}{RGB}{17,94,103}
+
+\RequirePackage[framemethod=tikz]{mdframed}
+\newmdenv[innerlinewidth=0.5pt, roundcorner=4pt,linecolor=upbblue,innerleftmargin=6pt,
+innerrightmargin=6pt,innertopmargin=6pt,innerbottommargin=6pt]{coloredbox}
+
+\useinnertheme{minimal}
+\useoutertheme{minimal}
+\usecolortheme{minimal}
+
+\setbeamertemplate{navigation symbols}{}
+\ifhandout
+\setbeamertemplate{blocks}[rounded][shadow=false]
+\else
+\setbeamertemplate{blocks}[rounded][shadow=true]
+\fi
+
+\mode<all>

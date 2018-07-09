@@ -1,0 +1,38 @@
+%This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was not distributed with this file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+\mode<presentation>
+
+% Frame title
+\defbeamertemplate*{frametitle}{minimal}[1][]
+{
+\vskip.3cm%
+  \begin{beamercolorbox}[wd=\paperwidth,ht=1.2cm]{frametitle} 
+  \ifhandout
+  \begin{tikzpicture}
+  \fill[white] (0,0) rectangle (0.2, 1.2);
+  \fill[white] (0.2,0) rectangle(0.815*\the\paperwidth,1.2);  
+  \node[anchor=south west] (image) at (0.815*\the\paperwidth,0) {\includegraphics[width=2cm]{figures/CuK-Logo2_rot.pdf}};
+   \ifx\insertframesubtitle\@empty%
+      {\node[anchor=west, upbblue,font=\large] at (0.3,0.61){\insertframetitle};}
+      \else%
+      {\node[anchor= west, upbblue,font=\large] at (0.3,0.81){\insertframetitle};%
+       \node[anchor= west, upbblue,font=\small] at (0.3,0.41){\insertframesubtitle};}%
+      \fi
+  \end{tikzpicture}
+  \else
+  \begin{tikzpicture}
+  \fill[white] (0,0) rectangle (0.2, 1.2);
+  \fill[upbblue] (0.2,0) rectangle(0.815*\the\paperwidth,1.2);  
+  \node[anchor=south west] (image) at (0.815*\the\paperwidth,0) {\includegraphics[width=2cm]{figures/CuK-Logo2_rot.pdf}};
+   \ifx\insertframesubtitle\@empty%
+      {\node[anchor=west, white,font=\large] at (0.3,0.61){\insertframetitle};}
+      \else%
+      {\node[anchor= west, white,font=\large] at (0.3,0.81){\insertframetitle};%
+       \node[anchor= west, white,font=\small] at (0.3,0.41){\insertframesubtitle};}%
+      \fi
+  \end{tikzpicture}
+  \fi
+  \end{beamercolorbox}
+}
+
+\mode<all>

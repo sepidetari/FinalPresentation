@@ -1,0 +1,72 @@
+%This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was not distributed with this file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+\mode<presentation>
+
+\setbeamertemplate{background}{
+  \begin{tikzpicture}
+  \useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
+  \node[anchor=south west] (image) at (0,.2) {\includegraphics[width=2.7cm]{figures/CuK-Logo2_rot.pdf}};
+  \node[anchor=south west] (image) at (\textwidth-1.5cm,.4) {\includegraphics[width=2.7cm]{figures/upb_logo.png}};
+  \ifnum\thepage>1\relax%
+   \fill[white,opacity=1] (0,0) rectangle(\the\paperwidth,\the\paperheight);
+   \fi
+  \end{tikzpicture}
+}
+
+% Title page
+\defbeamertemplate*{title page}{minimal}[1][]
+{
+	\ifhandout
+	\begin{beamercolorbox}[wd=\textwidth,leftskip=3cm,sep=7pt,#1]{title page header handout}
+		\centering\usebeamerfont{title}\textbf{\inserttitle}
+	\end{beamercolorbox}
+	\else
+	\begin{beamercolorbox}[wd=\textwidth,leftskip=3cm,sep=7pt,#1]{title page header}
+		\centering\usebeamerfont{title}\textbf{\inserttitle}
+	\end{beamercolorbox}
+	\fi
+	
+	\vspace*{1cm}
+	
+	\begin{center}
+		\usebeamerfont{author}\textbf\insertauthor
+
+		\usebeamerfont{author}\insertinstitute
+
+		\usebeamerfont{date}\footnotesize\insertdate
+	\end{center}
+}
+
+% Intermediate Title Frames
+\ifhandout
+\newcommand{\headingframe}[1]{
+	\begin{frame}[plain]
+		\begin{beamercolorbox}[wd=\textwidth,leftskip=4cm,sep=7pt]{title page header handout}
+			\centering\usebeamerfont{title}\textbf{#1}
+		\end{beamercolorbox}
+	\end{frame}
+}
+\else
+\newcommand{\headingframe}[1]{
+	\begin{frame}[plain]
+		\begin{beamercolorbox}[wd=\textwidth,leftskip=4cm,sep=7pt]{title page header}
+			\centering\usebeamerfont{title}\textbf{#1}
+		\end{beamercolorbox}
+	\end{frame}
+}
+\fi
+
+% Boxes (only a capsulated minipage to make usage slightly easier)
+\newenvironment{element}[1][]{\begin{minipage}[t]{#1\textwidth}}{\end{minipage}}
+\newenvironment{boxedelement}[1][]{\begin{minipage}[t]{#1\textwidth}\begin{coloredbox}}{\end{coloredbox}\end{minipage}}
+
+% Items
+\setbeamertemplate{items}[square]
+\makeatletter
+\g@addto@macro\beamer@lastminutepatches{\renewcommand*{\theenumii}{\alph{enumii}}}
+\g@addto@macro\beamer@lastminutepatches{\renewcommand*{\theenumiii}{\roman{enumiii}}}
+\makeatother
+\setbeamertemplate{sections/subsections in toc}[square]
+\setbeamertemplate{footline}[frame number]
+
+\mode<all>
