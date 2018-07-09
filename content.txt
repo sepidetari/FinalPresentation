@@ -1,0 +1,43 @@
+01.	Title
+02.	Goal:
+Main goal: The main goal of the subgroup Data Extraction, is to create a knowledge extraction platform. These should unify the access to different tools for extraction and converting of any dataset to RDF as knowledge graph format. In the next step the extracted knowledge should be reused from other tools of the DICE group.
+\\\\
+	First semester:
+1.	Requirement phase: user stories, use cases, architecture & technology meetings
+2.	Setup Eureka
+3.	Implement Basic UI functionality
+4.	Implement repository functionality
+5.	Implement Fred, Fox, Sorokin, Cederic, OpenIE
+6.	Implement basic database functionality
+7.	Implement basic executer functionality
+Second semester:
+1.	Extend UI and executer functionality for complex workflows
+2.	Extend Database functionality
+3.	Implement Exception & Message handling
+4.	Integrate chatbot and autoindex
+5.	Implement TAIPAN
+6.	Dockern of microservices
+7.	Setup the staging machine
+8.	Implement SASK-Commons
+
+03.	Software Architecture [Kevin Haack, André Sonntag]
+
+04.	UI [Kevin Haack]
+05.	Repository [André Sonntag]
+
+06.	Extractors [André Sonntag, Kevin Haack, Sepide Tari, Suganya Kannan,]
+Current implemented extractors: 
+•	Cederic [Kevin]
+•	DBPedia [Suganya]
+•	FOX [André]
+•	FRED [André]
+•	Open-IE 
+•	Sorookin
+•	TAIPAN [André]
+
+07.	Database [Sepide Tari, Suganya Kannan]
+
+08.	Exception & Message handling 
+09.	Demo
+---------------------------------------------------------------------------------
+10.	Ensemble learning
