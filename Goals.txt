@@ -1,0 +1,25 @@
+Your presentation should show the goals that the group had, which steps have been made, which goals have been achieved (including evaluation results where possible) and which goals might not have been achieved (and why).
+
+
+Goals:
+
+1. Simple Workflow:
+
+User creates a workspace then add extractors / data/ target graph  to the workspace from repository and connect the added nodes(Extractors, data, target graph). At the end, the user executes the workspace to store the result from the extractions into the chosen target graph in the database. User also needs to reload saved workspace and redo/undo the actions in workspace as well as remove undesired nodes from it.
+
+2. Complex workflows:
+The application should be able to handle more complex workflows.
+
+
+3. Exception & Message handling 
+The application should log everything on a central location. 
+
+4. Visualize database graphs in a graphical view
+The user should be able to display database content as graph and table in the UI.
+
+5.Ensemble learning
+
+To extract data from training data To implement ensemble learning to predict which extractor fit
+
+6.Integrate chat in UI 
+The chat should be intregrated in the UI
