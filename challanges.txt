@@ -1,0 +1,9 @@
+Challanges:
+
+Exctractors: 
+For second Milestone Fox, Fred exctractors sometimes were down.
+Sorookin exctractor web service is down now.
+
+
+DataBase:
+N3 were stored to database till almost near the final milestone presentation. As requirement changed so we need to configure extractors, executore and database micorservises to store turtle in database.
