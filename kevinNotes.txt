@@ -1,0 +1,39 @@
+\begin{frame}{Trello first semester}
+	\begin{enumerate}
+		\item Architecture/Spring Boot - Eureka (André \& Kevin)
+		\item Executer (André \& Kevin)
+		\item Database/Fuseki  (Sepide \& Suganya)
+		\item Repository/Hadoop (André)
+		\item UI Prototype (Kevin)
+		\item Webclient
+		\begin{enumerate}
+			\item UI framework (Kevin)
+			\item Create workflows (Kevin)
+			\item microservices status (Kevin)
+			\item UI-Repo interaction (Kevin)
+		\end{enumerate}
+		\item Extractors
+		\begin{enumerate}
+			\item Cedric (Kevin)
+			\item OpenIE (Suganya)
+			\item FOX (André)
+			\item Spotlight (Suganya \& Kevin)
+			\item RDFFred (André)
+		\end{enumerate}
+	\end{enumerate}
+\end{frame}
+
+\begin{frame}{Trello seconds semester}
+	\begin{enumerate}
+		\item Logging (Sepide \& Suganya)
+		\item Chat integration (Kevin)
+		\item Complex workflows (André \& Kevin)
+		\item Commons library (André \& Kevin)
+		\item Dockerize (Kevin)
+		\item Extractors
+		\begin{enumerate}
+			\item Sorookin (Sepide \& Suganya)
+			\item TAIPAN (André)
+		\end{enumerate}
+	\end{enumerate}
+\end{frame}
