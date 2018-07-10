@@ -5,7 +5,7 @@
 \setbeamertemplate{background}{
   \begin{tikzpicture}
   \useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
- 
+  \node[anchor=south west] (image) at (0,.2) {\includegraphics[width=2.7cm]{figures/CuK-Logo2_rot.pdf}}; 
   \node[anchor=south west] (image) at (\textwidth-1.5cm,.4) {\includegraphics[width=2.7cm]{figures/upb_logo.png}};
   \ifnum\thepage>1\relax%
    \fill[white,opacity=1] (0,0) rectangle(\the\paperwidth,\the\paperheight);
