@@ -28,16 +28,29 @@ Second semester:
 06.	Extractors [André Sonntag, Kevin Haack, Sepide Tari, Suganya Kannan,]
 Current implemented extractors: 
 •	Cederic [Kevin]
-•	DBPedia [Suganya]
+•	DBPedia [Kevin]
 •	FOX [André]
 •	FRED [André]
-•	Open-IE 
-•	Sorookin
+•	Open-IE [Suganya]
+•	Sorookin[Suganya, Kevin]
 •	TAIPAN [André]
 
 07.	Database [Sepide Tari, Suganya Kannan]
 
+1. Set up database using Apache jena and Fuseki server. We use a common dataset named SASK.
+2. Methods added to query the default graph and the named graph, update the dataset, getting the named graphs
+and to process SPARQL queries.
+3. Functionality is implemented to update AutoIndex once the updation is done on the dataset.
+4. At first the triples were sent to the Fuseki server as a String. Later, the functionality is modified to transform the output of the extractors into a Jena Model and storing it into the database.
+
+
 08.	Exception & Message handling 
+1. The application logs everything on a central location. 
+2. We use ELK(ElasticSearch, Logstash, Kibana) Stack for this purpose. 
+3. Every microservice sends logs to a centralized location and logstash sends the logs to ElasticSearch.
+4. The logs can be visualized in Kibana.
+4. The ELK Stack has been deployed in the VM as well.
+
 09.	Demo
 ---------------------------------------------------------------------------------
 10.	Ensemble learning
