@@ -16,9 +16,9 @@ The application should log everything on a central location. We use ELK Stack fo
 4. Visualize database graphs in a graphical view
 The user should be able to display database content as graph and table in the UI.
 
-5.Ensemble learning
+5.Predict the efficiency of exractor using machine learning model
 
-To extract data from training data To implement ensemble learning to predict which extractor fit
+To extract data from training data and provide it to diffrent exractos and compare the response of every extractor to implement machine learning model(ensemble learning )to predict efficency of every extractor.
 
 6.Integrate chat in UI 
 The chat should be intregrated in the UI
