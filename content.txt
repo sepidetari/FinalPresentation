@@ -1,6 +1,6 @@
 01.	Title
 02.	Goal:
-Main goal: The main goal of the subgroup Data Extraction, is to create a knowledge extraction platform. These should unify the access to different tools for extraction and converting of any dataset to RDF as knowledge graph format. In the next step the extracted knowledge should be reused from other tools of the DICE group.
+Main goal: The main goal of the subgroup Data Extraction, is to create a knowledge extraction platform. These should unify the access to different tools for extraction and converting of any dataset to RDF as knowledge graph format. Find the effiecency of tools of extraction. In the next step the extracted knowledge should be reused from other tools of the DICE group.
 \\\\
 	First semester:
 1.	Requirement phase: user stories, use cases, architecture & technology meetings
@@ -19,6 +19,7 @@ Second semester:
 6.	Dockern of microservices
 7.	Setup the staging machine
 8.	Implement SASK-Commons
+9.      Predict the efficieny of extractor using Machine Learning
 
 03.	Software Architecture [Kevin Haack, André Sonntag]
 
@@ -53,4 +54,14 @@ and to process SPARQL queries.
 
 09.	Demo
 ---------------------------------------------------------------------------------
-10.	Ensemble learning
+10.	Predict the efficieny of extractor using Machine Learning
+1. Extract input sentences from training dataset  from oke dataset and give it to every extractor 
+2. Take the responses of every extractors and store them
+3. Transform the response of every extractor in unified form to make it comparable
+4. Compre the output of extractor against the ideal answer of OKE 
+5.  Select the classes based on the performance of every extractor
+6. Build machine learning model which can predict the which extractor output is more efficient
+
+
+
+
