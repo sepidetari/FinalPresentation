@@ -1,0 +1,2 @@
+transform the output of extractor in unified format so that performance of ml model will increased.
+SASK group frontend can be marged with Intelligent group.
